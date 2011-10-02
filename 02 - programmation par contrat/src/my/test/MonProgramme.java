@@ -14,7 +14,8 @@ public class MonProgramme {
     public static void main(final String[] args) {
         MonAnnuaire annuaire = constructionAnnuaire();
 
-
+        System.out.println("==== IMPLEMENTATION "+annuaire.nomImplementation() + " ======");
+        
         System.out.println("Ajout de John Doe dans l'annuaire");
         annuaire.ajoutPersonne("Doe", "John", "01 04 03 05 03");
 
@@ -50,14 +51,19 @@ public class MonProgramme {
 
 
     public static MonAnnuaire constructionAnnuaire() {
+    	List<MonAnnuaire> annuaires = new ArrayList<MonAnnuaire>();
         try {
             Class[] classes = getClasses("my.test.implementation");
             for (Class c : classes) {
 
                 if(MonAnnuaire.class.isAssignableFrom(c)) {
-                    return (MonAnnuaire) c.newInstance();
+                    annuaires.add( (MonAnnuaire) c.newInstance());
                 }
             }
+            
+            int taille = annuaires.size();
+            long indexAlleatoire = Math.round(Math.random() * (taille -1));
+            return annuaires.get((int)indexAlleatoire);
         } catch (Exception ex) {
             System.err.println("Erreur dans la recupération des classes");
             ex.printStackTrace();

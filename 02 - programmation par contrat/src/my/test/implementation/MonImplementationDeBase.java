@@ -77,4 +77,9 @@ public class MonImplementationDeBase implements MonAnnuaire {
             return result;
         }
     }
+
+	@Override
+	public String nomImplementation() {
+		return "MonImplementationDeBase";
+	}
 }

@@ -55,4 +55,9 @@ public class DavidWImpl implements MonAnnuaire {
 		return internal.get(téléphone).split(File.pathSeparator)[1];
 	}
 
+	@Override
+	public String nomImplementation() {
+		return "DavidWImpl";
+	}
+
 }

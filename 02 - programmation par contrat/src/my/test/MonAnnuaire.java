@@ -4,6 +4,13 @@ import java.util.Collection;
 
 public interface MonAnnuaire {
 	
+	
+	/**
+	 * 
+	 * @return le nom de l'implementation actuellement utilisé (exemple : MonImplementationDeBase)
+	 */
+	String nomImplementation();
+	
 	/**
 	 * La méthode ajout une personne dans l'annuaire.
 	 * Si on ajoute cette personne dans l'annuaire, alors on doit être capable de pouvoir :
