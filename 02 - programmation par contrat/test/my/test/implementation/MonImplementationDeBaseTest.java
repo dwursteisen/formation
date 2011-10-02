@@ -10,13 +10,13 @@ import static junit.framework.Assert.*;
 import static org.junit.Assert.assertTrue;
 
 
-public class MonImprementationDeBaseTest {
+public class MonImplementationDeBaseTest {
 
     private MonAnnuaire annuaire;
 
     @Before
     public void setUp() {
-        annuaire = new MonImprementationDeBase();
+        annuaire = new MonImplementationDeBase();
     }
 
 

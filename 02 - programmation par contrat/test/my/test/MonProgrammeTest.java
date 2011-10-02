@@ -1,6 +1,6 @@
 package my.test;
 
-import my.test.implementation.MonImprementationDeBase;
+import my.test.implementation.MonImplementationDeBase;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
@@ -18,6 +18,6 @@ public class MonProgrammeTest {
     public void testConstructionAnnuaire() throws Exception {
         MonAnnuaire instance = MonProgramme.constructionAnnuaire();
         assertNotNull(instance);
-        assertTrue(MonImprementationDeBase.class.isInstance(instance));
+        assertTrue(MonImplementationDeBase.class.isInstance(instance));
     }
 }
