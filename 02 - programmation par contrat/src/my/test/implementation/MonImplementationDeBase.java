@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class MonImprementationDeBase implements MonAnnuaire {
+public class MonImplementationDeBase implements MonAnnuaire {
 
     private Map<Personne, String> dictionnaire = new HashMap<Personne, String>();
 
