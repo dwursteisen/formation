@@ -16,7 +16,7 @@ import static org.junit.Assert.assertTrue;
 public class MonProgrammeTest {
     @Test
     public void testConstructionAnnuaire() throws Exception {
-        MonAnnuaire instance = MonProgramme.constructionAnnuaire();
+        MonAnnuaire instance = FabriqueAnnuaire.constructionAnnuaire();
         assertNotNull(instance);
         assertTrue(MonImplementationDeBase.class.isInstance(instance));
     }
