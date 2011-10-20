@@ -62,7 +62,7 @@
       <file leaf-file-name="Radio.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/Radio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="49" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="14" column="10" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,10 +71,8 @@
       <file leaf-file-name="RadioLocale.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="70" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="28" column="25" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,10 +80,8 @@
       <file leaf-file-name="RadioNationale.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioNationale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="8" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="29" column="17" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,10 +89,8 @@
       <file leaf-file-name="RadioMondiale.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioMondiale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="79" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="33" column="8" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,10 +98,41 @@
       <file leaf-file-name="EcouteRadio.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/gestion/erreurs/EcouteRadio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="915" selection-end="915" vertical-scroll-proportion="0.64116096">
+            <state line="50" column="47" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.20844327">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BandePassante.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassante.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="27" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BandePassanteTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/github/dwursteisen/mon/programme/BandePassanteTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="55" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BandePassanteToujoursOuverte.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassanteToujoursOuverte.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="66" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,11 +161,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/ProblemeTechnique.java" />
-        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/Radio.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/RadioLocale.java" />
+        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassanteTest.java" />
+        <option value="$PROJECT_DIR$/test/com/github/dwursteisen/mon/programme/BandePassanteTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassanteToujoursOuverte.java" />
+        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/Radio.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java" />
-        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioNationale.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioMondiale.java" />
+        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioNationale.java" />
+        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassante.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/gestion/erreurs/EcouteRadio.java" />
       </list>
     </option>
@@ -189,10 +218,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -284,6 +309,7 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -293,11 +319,18 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLanguage" value="Java" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.github.dwursteisen.mon.programme" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.EcouteRadio">
     <configuration default="false" name="EcouteRadio" type="Application" factoryName="Application" temporary="true">
@@ -312,9 +345,49 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="03 gestions erreurs" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="41592" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BandePassanteTest.bandePassanteNonFerme" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="03 gestions erreurs" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.github.dwursteisen.mon.programme" />
+      <option name="MAIN_CLASS_NAME" value="com.github.dwursteisen.mon.programme.BandePassanteTest" />
+      <option name="METHOD_NAME" value="bandePassanteNonFerme" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
       <module name="" />
@@ -327,18 +400,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -435,8 +496,9 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.EcouteRadio" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BandePassanteTest.bandePassanteNonFerme" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -463,6 +525,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="21a7a64e-fc8a-4df2-8fd2-dad5a8b1e9cf" name="Default" comment="" />
       <created>1317673855531</created>
       <updated>1317673855531</updated>
     </task>
@@ -470,26 +533,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1282" height="776" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67086613" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939074" sideWeight="0.67086613" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -546,34 +609,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/github/dwursteisen/mon/programme/BandePassanteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="55" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassanteToujoursOuverte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="66" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/Radio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+        <state line="14" column="10" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioMondiale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="8" selection-start="995" selection-end="995" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioNationale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="17" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="70" selection-start="962" selection-end="962" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="28" column="25" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioNationale.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="8" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioMondiale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="79" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0">
+        <state line="26" column="27" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -582,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/gestion/erreurs/EcouteRadio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="915" selection-end="915" vertical-scroll-proportion="0.64116096">
+        <state line="50" column="47" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.20844327">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

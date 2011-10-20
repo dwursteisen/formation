@@ -1,5 +1,6 @@
 package com.github.dwursteisen.gestion.erreurs;
 
+import com.github.dwursteisen.mon.programme.BandePassante;
 import com.github.dwursteisen.mon.programme.ProblemeTechnique;
 import com.github.dwursteisen.mon.programme.Radio;
 import com.github.dwursteisen.mon.programme.implementation.RadioLocale;
@@ -24,27 +25,41 @@ public class EcouteRadio {
 
 
         logger.info("Création des radios");
-        Radio radioLocale = new RadioLocale();
-        Radio radioNationale = new RadioNationale();
-        Radio radioMondiale = new RadioMondiale();
+        final Radio radioLocale = new RadioLocale();
+        final Radio radioNationale = new RadioNationale();
+        final Radio radioMondiale = new RadioMondiale();
 
+        logger.info("Réservation de la bande passante");
+        final BandePassante bandePassante = new BandePassante();
 
-        try {
-            logger.info("Utilisation de la radio locale");
-            List<String> stations = radioLocale.listeDesStations();
-            String stationCourante = radioLocale.nomStationCourante();
-            radioLocale.ecouteStation();
-            radioLocale.stationSuivante();
-        } catch (ProblemeTechnique problemeTechnique) {
+        logger.info("Utilisation de la radio locale");
+        utilisationRadio(bandePassante, radioLocale);
 
-        }
+        logger.info("Utilisation de la radio locale (encore)");
+        utilisationRadio(bandePassante, radioLocale);
 
-        // TODO pareil pour les autres Radios
         logger.info("Utilisation de la radio nationale");
-
+        utilisationRadio(bandePassante, radioNationale);
 
         logger.info("Utilisation de la radio mondiale");
+        utilisationRadio(bandePassante, radioMondiale);
 
+    }
+
+    private static void utilisationRadio(BandePassante bandePassante, Radio radio) {
+        bandePassante.ouverture();
+        // TODO: supprimer le try/catch/finally
+        try {
+
+            List<String> stations = radio.listeDesStations();
+            String stationCourante = radio.nomStationCourante();
+            radio.ecouteStation(bandePassante);
+            radio.stationSuivante();
+        } catch (ProblemeTechnique problemeTechnique) {
+            logger.warning("* Oups * ! Problème technique lors de l'écoute de la radio");
+        } finally {
+            bandePassante.fermeture();
+        }
 
     }
 }

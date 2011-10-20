@@ -12,7 +12,7 @@ import java.util.List;
 public interface Radio {
     List<String> listeDesStations();
 
-    void ecouteStation() throws ProblemeTechnique;
+    void ecouteStation(BandePassante bandePassante) throws ProblemeTechnique;
     String nomStationCourante();
     void stationSuivante();
 
