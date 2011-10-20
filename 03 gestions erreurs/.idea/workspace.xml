@@ -71,7 +71,16 @@
       <file leaf-file-name="RadioLocale.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
+            <state line="41" column="73" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="50" selection-start="834" selection-end="834" vertical-scroll-proportion="0.875">
               <folding />
             </state>
           </provider>
@@ -95,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EcouteRadio.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EcouteRadio.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/gestion/erreurs/EcouteRadio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="47" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.20844327">
+            <state line="51" column="25" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,11 +175,12 @@
         <option value="$PROJECT_DIR$/test/com/github/dwursteisen/mon/programme/BandePassanteTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassanteToujoursOuverte.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/Radio.java" />
-        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioMondiale.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioNationale.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassante.java" />
+        <option value="$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java" />
         <option value="$PROJECT_DIR$/src/com/github/dwursteisen/gestion/erreurs/EcouteRadio.java" />
+        <option value="$PROJECT_DIR$/src/log4j.properties" />
       </list>
     </option>
   </component>
@@ -227,6 +237,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="03 gestions erreurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03 gestions erreurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="03 gestions erreurs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -646,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/BandePassante.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="27" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
@@ -662,12 +679,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/mon/programme/implementation/RadioLocale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="73" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/dwursteisen/gestion/erreurs/EcouteRadio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="47" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.20844327">
+        <state line="51" column="25" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="50" selection-start="834" selection-end="834" vertical-scroll-proportion="0.875">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +760,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

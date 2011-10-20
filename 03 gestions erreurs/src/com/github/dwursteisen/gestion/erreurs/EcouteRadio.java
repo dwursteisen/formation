@@ -6,20 +6,13 @@ import com.github.dwursteisen.mon.programme.Radio;
 import com.github.dwursteisen.mon.programme.implementation.RadioLocale;
 import com.github.dwursteisen.mon.programme.implementation.RadioMondiale;
 import com.github.dwursteisen.mon.programme.implementation.RadioNationale;
+import org.apache.log4j.Logger;
 
 import java.util.List;
-import java.util.logging.Logger;
 
-/**
- * Created by IntelliJ IDEA.
- * User: david
- * Date: 03/10/11
- * Time: 22:56
- * To change this template use File | Settings | File Templates.
- */
 public class EcouteRadio {
 
-    private static final Logger logger = Logger.getLogger("MonLogger");
+    private static final Logger logger = Logger.getLogger(EcouteRadio.class);
 
     public static void main(final String[] args) {
 
@@ -56,7 +49,7 @@ public class EcouteRadio {
             radio.ecouteStation(bandePassante);
             radio.stationSuivante();
         } catch (ProblemeTechnique problemeTechnique) {
-            logger.warning("* Oups * ! Problème technique lors de l'écoute de la radio");
+            logger.error("* Oups * ! Problème technique lors de l'écoute de la radio", problemeTechnique);
         } finally {
             bandePassante.fermeture();
         }
