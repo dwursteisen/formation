@@ -50,7 +50,9 @@ public class EcouteRadio {
 
         logger.debug("Ecoute de la station :"+stationCourante);
 
+        // gérer le try/catch ici !
         radio.ecouteStation(bandePassante);
+		
         radio.stationSuivante();
         
     }

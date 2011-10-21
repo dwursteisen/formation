@@ -15,6 +15,6 @@ public interface Radio {
     void ecouteStation(BandePassante bandePassante) throws ProblemeTechnique;
     String nomStationCourante();
     void stationSuivante();
-
+    void annulationEcoute();
 
 }

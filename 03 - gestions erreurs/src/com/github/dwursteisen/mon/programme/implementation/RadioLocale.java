@@ -42,4 +42,9 @@ public class RadioLocale implements Radio {
         logger.info("Recherche de la station suivante sur la radio locale");
         currentIndex = (currentIndex + 1) % listeDesStations().size();
     }
+
+	public void annulationEcoute() {
+		// rollback de la dernière écoute
+		logger.info("Annulation de la dernière écoute");
+	}
 }

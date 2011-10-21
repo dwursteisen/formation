@@ -7,6 +7,8 @@ import com.github.dwursteisen.mon.programme.Radio;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 /**
  * Created by IntelliJ IDEA.
  * User: david
@@ -15,6 +17,10 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class RadioNationale implements Radio {
+	
+	private static final Logger logger = Logger.getLogger(RadioNationale.class);
+
+	
     public List<String> listeDesStations() {
         return Arrays.asList("Radio Normandie", "Radio Bretagne", "Radio Ile de France");
     }
@@ -33,4 +39,9 @@ public class RadioNationale implements Radio {
     public void stationSuivante() {
 
     }
+    
+    public void annulationEcoute() {
+		// rollback de la dernière écoute
+		logger.info("Annulation de la dernière écoute");
+	}
 }
