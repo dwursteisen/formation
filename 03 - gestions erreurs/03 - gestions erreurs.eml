@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true">
+	<output-test url="file://$MODULE_DIR$/../03 - gestions erreurs/out/test/03 - gestions erreurs"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$/../03 - gestions erreurs">
+		<testFolder url="file://$MODULE_DIR$/../03 - gestions erreurs/test"/>
+	</contentEntry>
+	<lib name="$APPLICATION_HOME_DIR$/lib/junit-4.8.jar" scope="TEST"/>
+	<lib name="$MODULE_DIR$/../03 - gestions erreurs/lib" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/../03 - gestions erreurs/lib"/>
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/../03 - gestions erreurs/lib/log4j-1.2.16.jar!/"/>
+	</lib>
+</component>
