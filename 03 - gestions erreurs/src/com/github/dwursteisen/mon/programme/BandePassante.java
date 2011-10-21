@@ -32,8 +32,11 @@ public class BandePassante {
     }
 
     public void utilisation(RadioNationale radio) {
-        // TODO: faire quelque chose !
-        // et bah non, je fais rien faire !
+        // TODO: faire quelque chose (comme corriger le code) !
+    	String maVariable = radio.nomStationCourante();
+    	if(!maVariable.isEmpty()) {
+    		maVariable = "";
+    	}
     }
 
     public void fermeture() {
