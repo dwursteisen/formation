@@ -32,6 +32,7 @@ public class BandePassante {
     }
 
     public void utilisation(RadioNationale radio) {
+        // TODO: faire quelque chose !
         throw new RuntimeException("Oups ! L'implémentation de la méthode n'existe pas encore !");
     }
 
