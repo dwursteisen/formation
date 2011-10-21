@@ -50,8 +50,15 @@ public class EcouteRadio {
 
         logger.debug("Ecoute de la station :"+stationCourante);
 
-        // gérer le try/catch ici !
-        radio.ecouteStation(bandePassante);
+        try {
+			radio.ecouteStation(bandePassante);
+		} catch (ProblemeTechnique e) {
+			logger.error("Problème technique lors de l'écoute d'une radio : "+
+						 "L'écoute va être annulé", e);
+			radio.annulationEcoute();
+		} finally {
+			bandePassante.fermeture();
+		}
 		
         radio.stationSuivante();
         
