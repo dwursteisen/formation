@@ -41,25 +41,17 @@ public class EcouteRadio {
 
     private static void utilisationRadio(BandePassante bandePassante, Radio radio) {
         bandePassante.ouverture();
-        // TODO: supprimer le try/catch/finally
-        try {
-            if(logger.isDebugEnabled()) {
-                List<String> stations = radio.listeDesStations();
-                logger.debug("Liste des stations de la radio courante : "+stations);
-            }
-
-            String stationCourante = radio.nomStationCourante();
-
-            logger.debug("Ecoute de la station :"+stationCourante);
-
-            radio.ecouteStation(bandePassante);
-            radio.stationSuivante();
-
-        } catch (ProblemeTechnique problemeTechnique) {
-            logger.error("* Oups * ! Problème technique lors de l'écoute de la radio", problemeTechnique);
-        } finally {
-            bandePassante.fermeture();
+        if(logger.isDebugEnabled()) {
+            List<String> stations = radio.listeDesStations();
+            logger.debug("Liste des stations de la radio courante : "+stations);
         }
 
+        String stationCourante = radio.nomStationCourante();
+
+        logger.debug("Ecoute de la station :"+stationCourante);
+
+        radio.ecouteStation(bandePassante);
+        radio.stationSuivante();
+        
     }
 }
