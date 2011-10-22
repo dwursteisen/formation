@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/03 - gestions erreurs/03 gestions erreurs.iml" filepath="$PROJECT_DIR$/03 - gestions erreurs/03 gestions erreurs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05 - Threads/05 - Threads.iml" filepath="$PROJECT_DIR$/05 - Threads/05 - Threads.iml" />
       <module fileurl="file://$PROJECT_DIR$/02 - programmation par contrat/test-idea.iml" filepath="$PROJECT_DIR$/02 - programmation par contrat/test-idea.iml" />
     </modules>
   </component>
