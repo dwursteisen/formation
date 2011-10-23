@@ -24,7 +24,7 @@ public class Quotes implements IWebservice {
     };
 
     private Random seed = new Random();
-    private boolean isRunning = false;
+    private volatile boolean isRunning = false;
 
     @Override
     public void demarrage() {
@@ -37,12 +37,7 @@ public class Quotes implements IWebservice {
         if (!isVivant()) {
             throw new RuntimeException("le service " + nomService() + " n'est pas démarré !");
         }
-        try {
-            Thread.sleep(175); // simulation d'une connexion réseau lente
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-        return quotes[seed.nextInt(quotes.length)];
+        return nomService() + " - " + quotes[seed.nextInt(quotes.length)];
     }
 
     @Override
