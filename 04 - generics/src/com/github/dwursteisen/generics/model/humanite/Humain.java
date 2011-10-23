@@ -10,7 +10,7 @@ import java.util.Random;
  * Date: 21/10/11
  * Time: 22:01
  */
-public abstract class Humain implements EtreVivant<Humain> {
+public abstract class Humain implements EtreVivant {
 
     private static int population = 0;
 
@@ -22,7 +22,7 @@ public abstract class Humain implements EtreVivant<Humain> {
 
     public abstract String getGenre();
 
-    public Humain reproduction(EtreVivant<? extends Humain> etreVivant) {
+    public Humain reproduction(Humain autre) {
         int aleatoire = new Random().nextInt();
         boolean isImpaire = (aleatoire & 0x01) == 0;
 

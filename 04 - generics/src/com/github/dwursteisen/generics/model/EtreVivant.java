@@ -5,7 +5,7 @@ package com.github.dwursteisen.generics.model;
  * Date: 21/10/11
  * Time: 22:17
  */
-public interface EtreVivant<GENRE> {
+public interface EtreVivant {
 
-    GENRE reproduction(EtreVivant<? extends GENRE> etreVivant);
+    String jouer();
 }

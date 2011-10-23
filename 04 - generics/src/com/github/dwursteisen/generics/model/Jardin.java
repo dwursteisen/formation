@@ -1,25 +1,25 @@
 package com.github.dwursteisen.generics.model;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 /**
  * User: Wursteisen David
  * Date: 21/10/11
  * Time: 22:04
  */
-public class Jardin<MALE extends EtreVivant & Male, FEMELLE extends EtreVivant & Femelle> {
+public class Jardin<GENRE extends EtreVivant> {
 
-    private final MALE male;
-    private final FEMELLE femelle;
+    private Collection<GENRE> joueurs = new ArrayList<GENRE>();
 
-
-    public Jardin(MALE male, FEMELLE femelle) {
-        this.male = male;
-        this.femelle = femelle;
+    public void ajouteDansLeJardin(GENRE nouvelArrivant) {
+        joueurs.add(nouvelArrivant);
     }
 
-
-    public <GENRE extends EtreVivant> GENRE nouvelleGeneration(Class<GENRE> genre) {
-        return (GENRE) male.reproduction(femelle);
+    public void faireJouerToutLeMonde() {
+        for (GENRE joueur : joueurs) {
+            System.out.println(joueur.jouer());
+        }
     }
-
 
 }

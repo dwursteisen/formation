@@ -11,17 +11,11 @@ import java.util.Random;
  * Date: 21/10/11
  * Time: 22:07
  */
-public abstract class Animal implements EtreVivant<Animal> {
+public class Animal implements EtreVivant {
 
-    public Animal reproduction(EtreVivant<? extends Animal> etreVivant) {
-        int aleatoire = new Random().nextInt();
-        boolean isImpaire = (aleatoire & 0x01) == 0;
 
-        if(isImpaire) {
-            return new Chien();
-        } else {
-            return new Chienne();
-        }
-
+    @Override
+    public String jouer() {
+        return "Waff !";
     }
 }

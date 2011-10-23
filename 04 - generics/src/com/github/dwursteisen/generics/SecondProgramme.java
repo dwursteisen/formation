@@ -20,10 +20,20 @@ public class SecondProgramme {
         Homme adam = new Homme();
         Femme eve = new Femme();
 
-        Jardin<Homme, Femme> heaven = new Jardin<Homme, Femme>(adam, eve);
-        Humain enfant = heaven.nouvelleGeneration(Humain.class);
+        // TODO: mettre des Object partout
+        Jardin<Animal> petitJardin = new Jardin<Animal>();
+        petitJardin.ajouteDansLeJardin(new Animal());
+        petitJardin.faireJouerToutLeMonde();
 
-        Animal animal = heaven.nouvelleGeneration(Animal.class);
+        Jardin<Humain> grandJardin = new Jardin<Humain>();
+        grandJardin.ajouteDansLeJardin(adam);
+        grandJardin.ajouteDansLeJardin(eve);
+        grandJardin.faireJouerToutLeMonde();
+
+        Jardin<Homme> jardin = new Jardin<Homme>();
+        jardin.ajouteDansLeJardin(adam);
+        jardin.faireJouerToutLeMonde();
+
 
     }
 }

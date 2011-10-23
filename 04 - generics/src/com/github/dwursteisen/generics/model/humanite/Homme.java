@@ -1,13 +1,11 @@
 package com.github.dwursteisen.generics.model.humanite;
 
-import com.github.dwursteisen.generics.model.Male;
-
 /**
  * User: Wursteisen David
  * Date: 21/10/11
  * Time: 22:02
  */
-public class Homme extends Humain implements Male {
+public class Homme extends Humain {
 
     public Homme() {
         this(null);
@@ -20,5 +18,10 @@ public class Homme extends Humain implements Male {
     @Override
     public String getGenre() {
         return "Homme";
+    }
+
+    @Override
+    public String jouer() {
+        return "Radio, biere, foot !";
     }
 }
