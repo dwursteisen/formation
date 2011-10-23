@@ -1,5 +1,6 @@
 package com.github.dwursteisen.generics.model.humanite;
 
+import com.github.dwursteisen.generics.annotation.Timer;
 import com.github.dwursteisen.generics.model.EtreVivant;
 
 import java.util.Random;
@@ -10,6 +11,8 @@ import java.util.Random;
  * Time: 22:01
  */
 public abstract class Humain implements EtreVivant<Humain> {
+
+    private static int population = 0;
 
     protected final String nom;
 
@@ -23,6 +26,8 @@ public abstract class Humain implements EtreVivant<Humain> {
         int aleatoire = new Random().nextInt();
         boolean isImpaire = (aleatoire & 0x01) == 0;
 
+        population++;
+
         if(isImpaire) {
             return new Femme();
         } else {
@@ -32,5 +37,11 @@ public abstract class Humain implements EtreVivant<Humain> {
 
     public String getNom() {
         return nom;
+    }
+
+
+    @Timer(frequence = 1000)
+    public void affichePopulation() {
+        System.out.println("Population => "+population);
     }
 }

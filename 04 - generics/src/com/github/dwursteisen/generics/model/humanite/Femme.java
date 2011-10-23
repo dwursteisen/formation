@@ -1,5 +1,6 @@
 package com.github.dwursteisen.generics.model.humanite;
 
+import com.github.dwursteisen.generics.annotation.Timer;
 import com.github.dwursteisen.generics.model.Femelle;
 
 /**
@@ -21,5 +22,11 @@ public class Femme extends Humain implements Femelle {
     @Override
     public String getGenre() {
         return "Femme";
+    }
+
+
+    @Timer(frequence = 5000)
+    public void pouvoirAuxFemmes() {
+        System.out.println("Pouvoir aux femmes !");
     }
 }
