@@ -16,18 +16,18 @@ import java.util.Random;
 public class PremierProgramme {
 
     public static void main(final String...args) {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         list.add("un");
         list.add("deux");
         list.add("trois");
 
 
-        List<Homme> hommesCelebres = new ArrayList<>();
+        List<Homme> hommesCelebres = new ArrayList<Homme>();
         hommesCelebres.add(new Homme("Einstein"));
         hommesCelebres.add(new Homme("Sun Tzu"));
         hommesCelebres.add(new Homme("Patrick Bruel"));
 
-        List<Humain> personnesCelebres = new ArrayList<>();
+        List<Humain> personnesCelebres = new ArrayList<Humain>();
         personnesCelebres.add(new Homme("Mickael Jackson"));
         personnesCelebres.add(new Femme("Marilyn Monroe"));
 
