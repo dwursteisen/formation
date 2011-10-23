@@ -8,17 +8,17 @@ import java.util.Collection;
  * Date: 21/10/11
  * Time: 22:04
  */
-public class Jardin<GENRE extends EtreVivant> {
+public class Jardin {
 
-    private Collection<GENRE> joueurs = new ArrayList<GENRE>();
+    private Collection joueurs = new ArrayList();
 
-    public void ajouteDansLeJardin(GENRE nouvelArrivant) {
+    public void ajouteDansLeJardin(Object nouvelArrivant) {
         joueurs.add(nouvelArrivant);
     }
 
     public void faireJouerToutLeMonde() {
-        for (GENRE joueur : joueurs) {
-            System.out.println(joueur.jouer());
+        for (Object joueur : joueurs) {
+            System.out.println(((EtreVivant)joueur).jouer());
         }
     }
 
