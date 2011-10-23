@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="thread libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/05 - Threads/lib" />
+      <root url="file://$PROJECT_DIR$/05 - Threads/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/05 - Threads/lib" recursive="false" />
+  </library>
+</component>
