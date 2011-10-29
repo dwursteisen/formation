@@ -1,5 +1,7 @@
 package com.github.dwursteisen.threads;
 
+import com.github.dwursteisen.threads.verificators.KillProgramByUser;
+import com.github.dwursteisen.threads.verificators.WebserviceVerificator;
 import com.github.dwursteisen.threads.webservice.IWebservice;
 import com.github.dwursteisen.threads.webservice.Quotes;
 import com.github.dwursteisen.threads.webservice.Twitter;
@@ -32,7 +34,9 @@ public class MonProgramme {
         affichageMessage.start();
         checkQuotesService.start();
         checkTwitterService.start();
-
+        
+        (new KillProgramByUser()).start();
+        
         Thread webserviceVerificator = new WebserviceVerificator(Arrays.asList(quotes, twitter));
         Runtime.getRuntime().addShutdownHook(webserviceVerificator);
 

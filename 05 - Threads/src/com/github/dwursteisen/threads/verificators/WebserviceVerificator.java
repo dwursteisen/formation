@@ -1,4 +1,4 @@
-package com.github.dwursteisen.threads;
+package com.github.dwursteisen.threads.verificators;
 
 import com.github.dwursteisen.threads.webservice.IWebservice;
 
@@ -12,7 +12,7 @@ import java.util.List;
  * Date: 23/10/11
  * Time: 12:15
  */
-class WebserviceVerificator extends Thread {
+public class WebserviceVerificator extends Thread {
 
     private List<String> threadImportant = Arrays.asList(
             "Monitor Ctrl-Break",
