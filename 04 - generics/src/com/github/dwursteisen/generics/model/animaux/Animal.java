@@ -1,10 +1,6 @@
 package com.github.dwursteisen.generics.model.animaux;
 
 import com.github.dwursteisen.generics.model.EtreVivant;
-import com.github.dwursteisen.generics.model.humanite.Femme;
-import com.github.dwursteisen.generics.model.humanite.Homme;
-
-import java.util.Random;
 
 /**
  * User: Wursteisen David
@@ -14,7 +10,6 @@ import java.util.Random;
 public class Animal implements EtreVivant {
 
 
-    @Override
     public String jouer() {
         return "Waff !";
     }

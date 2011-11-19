@@ -15,8 +15,16 @@ import java.util.Random;
  */
 public class PremierProgramme {
 
-    public static void main(final String...args) {
+    public static void main(final String... args) {
+
+        /*
+           * Tout le code suivant est écrit en Java 1.4
+           *
+           * Il doit être modifié pour utiliser les generics
+           */
+
         List<String> list = new ArrayList<String>();
+
         list.add("un");
         list.add("deux");
         list.add("trois");
@@ -33,13 +41,13 @@ public class PremierProgramme {
 
 
         Humain qui = personneAuPif(personnesCelebres);
-        System.out.println("Qui ? "+qui.getNom());
+        System.out.println("Qui ? " + qui.getNom());
         Humain quiDonc = personneAuPif(hommesCelebres);
-        System.out.println("Qui Donc ? "+quiDonc.getNom());
+        System.out.println("Qui Donc ? " + quiDonc.getNom());
     }
 
-    private static Humain personneAuPif(final List<? extends Humain> desGens) {
+    private static Humain personneAuPif(final List desGens) {
         int indexAleatoire = Math.abs(new Random().nextInt()) % desGens.size();
-        return desGens.get(indexAleatoire);
+        return (Humain) desGens.get(indexAleatoire);
     }
 }

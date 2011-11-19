@@ -7,7 +7,7 @@ import com.github.dwursteisen.generics.annotation.Timer;
  * Date: 21/10/11
  * Time: 22:02
  */
-public class Femme extends Humain{
+public class Femme extends Humain {
 
 
     public Femme() {
@@ -29,7 +29,6 @@ public class Femme extends Humain{
         System.out.println("Pouvoir aux femmes !");
     }
 
-    @Override
     public String jouer() {
         return "Shopping !";
     }
