@@ -1,5 +1,7 @@
 package com.github.dwursteisen.generics.model.humanite;
 
+import com.github.dwursteisen.generics.annotation.Timer;
+
 /**
  * User: Wursteisen David
  * Date: 21/10/11
@@ -20,7 +22,11 @@ public class Homme extends Humain {
         return "Homme";
     }
 
-    @Override
+    @Timer(frequence = 3000)
+    public void appelMoiRegulierement() {
+        System.out.println(jouer());
+    }
+
     public String jouer() {
         return "Radio, biere, foot !";
     }

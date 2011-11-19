@@ -8,6 +8,18 @@ import java.util.Collection;
  * Date: 21/10/11
  * Time: 22:04
  */
+
+/**
+ * Pour rendre généric cette class, il faut :
+ * 1) utiliser la syntax généric sur la class Jardin avec le bon joker. Il est important
+ * de savoir que la méthode 'jouer' n'est fourni uniquement que par l'interface EtreVivant
+ * <p/>
+ * 2) utiliser la syntaxe généric sur la collection joueurs
+ * <p/>
+ * 3) la collection étant généric, il est possible de modifier le for et le cast de la méthode faireJouerToutLeMonde
+ * <p/>
+ * 4) la dernière modification portera sur la méthode ajouteDansLeJardin, au niveau du paramètre de la méthode
+ */
 public class Jardin {
 
     private Collection joueurs = new ArrayList();
@@ -18,7 +30,8 @@ public class Jardin {
 
     public void faireJouerToutLeMonde() {
         for (Object joueur : joueurs) {
-            System.out.println(((EtreVivant)joueur).jouer());
+            EtreVivant obj = (EtreVivant) joueur;
+            System.out.println(obj.jouer());
         }
     }
 
