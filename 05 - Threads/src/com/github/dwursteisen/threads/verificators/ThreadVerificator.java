@@ -1,10 +1,7 @@
 package com.github.dwursteisen.threads.verificators;
 
-import com.github.dwursteisen.threads.webservice.IWebservice;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -12,7 +9,7 @@ import java.util.List;
  * Date: 23/10/11
  * Time: 12:15
  */
-public class WebserviceVerificator extends Thread {
+public class ThreadVerificator extends Thread {
 
     private List<String> threadImportant = Arrays.asList(
             "Monitor Ctrl-Break",
@@ -20,15 +17,19 @@ public class WebserviceVerificator extends Thread {
             "verificator" // ça, c'est moi !
     );
 
-    final private Collection<IWebservice> webservices;
+    final private ArrayList<Thread> threads;
 
-    public WebserviceVerificator() {
-        this(new ArrayList<IWebservice>());
+    public ThreadVerificator() {
+        this(new ArrayList<Thread>());
     }
 
-    public WebserviceVerificator(final List<? extends IWebservice> webservices) {
+    public ThreadVerificator(final Thread... threads) {
+        this(Arrays.asList(threads));
+    }
+
+    public ThreadVerificator(final List<? extends Thread> webservices) {
         super("verificator");
-        this.webservices = new ArrayList<IWebservice>(webservices);
+        this.threads = new ArrayList<Thread>(webservices);
     }
 
 
@@ -60,9 +61,9 @@ public class WebserviceVerificator extends Thread {
     }
 
     private void verificationDesServices() {
-        for (IWebservice webservice : webservices) {
-            if (webservice.isVivant()) {
-                System.err.println("Hey ! Tu as oublié de faire un stop sur le service " + webservice.nomService());
+        for (Thread t : threads) {
+            if (t.isAlive()) {
+                System.err.println("Hey ! Tu as oublié de faire un stop sur le service " + t.getName());
             }
         }
     }

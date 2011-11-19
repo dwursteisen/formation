@@ -35,7 +35,7 @@ public class Twitter implements IWebservice {
     @Override
     public String interrogation() {
         if (!isVivant()) {
-            throw new RuntimeException("le service " + nomService() + " n'est pas démarré !");
+            demarrage();
         }
         return nomService() + " - " + tweets[seed.nextInt(tweets.length)];
     }
