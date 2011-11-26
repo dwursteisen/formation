@@ -13,6 +13,7 @@ public class MonProgramme {
 
     public static void main(final String... args) throws InterruptedException {
 
+    	// Modifier la class SimpleThread
         SimpleThread thread = new SimpleThread();
         thread.start();
 

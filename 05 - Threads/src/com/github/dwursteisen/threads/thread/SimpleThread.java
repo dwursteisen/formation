@@ -22,15 +22,8 @@ public class SimpleThread extends Thread {
     @Override
     public void run() {
 
-        isRunning = true;
-        while (isRunning) {
-
-            try {
-                System.out.println(webservice.interrogation());
-                sleep(500);
-            } catch (InterruptedException e) {
-                isRunning = false;
-            }
-        }
+    	// faire un appel toutes les 1000ms !
+    	String reponse = webservice.interrogation();
+    	System.out.println(reponse);
     }
 }
