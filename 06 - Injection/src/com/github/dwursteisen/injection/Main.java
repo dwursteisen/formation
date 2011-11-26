@@ -15,6 +15,8 @@ public class Main {
     public static void main(final String...args) {
         Injector injector = Guice.createInjector(new OperationModule());
         Operator operator = injector.getInstance(Operator.class);
-        operator.perform();
+        for(int i = 0 ; i < 10 ; i++) {
+            operator.perform();
+        }
     }
 }

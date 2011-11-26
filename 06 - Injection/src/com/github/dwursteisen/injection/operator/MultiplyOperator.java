@@ -5,9 +5,11 @@ package com.github.dwursteisen.injection.operator;
  * Date: 23/11/11
  * Time: 23:27
  */
-public class MultiplyOperator extends AbstractOperator{
+public class MultiplyOperator extends AbstractOperator {
     public void perform() {
-        int value = left.generate() * right.generate();
-        display.display(value);
+        int leftValue = left.generate();
+        int rightValue = right.generate();
+        int value = leftValue * rightValue;
+        display.display(leftValue, rightValue, value, "x");
     }
 }

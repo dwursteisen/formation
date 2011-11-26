@@ -6,7 +6,7 @@ package com.github.dwursteisen.injection.display;
  * Time: 23:31
  */
 public class SystemOutDisplay implements Display{
-    public void display(int value) {
-        System.out.println(value);
+    public void display(int leftValue, int rightValue, int result, String operationSymbol) {
+        System.out.format("%d %s %d = %d\n", leftValue, operationSymbol, rightValue, result);
     }
 }

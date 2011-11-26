@@ -7,5 +7,5 @@ package com.github.dwursteisen.injection.display;
  */
 public interface Display {
 
-    void display(int value);
+    void display(int leftValue, int rightValue, int result, String operationSymbol);
 }

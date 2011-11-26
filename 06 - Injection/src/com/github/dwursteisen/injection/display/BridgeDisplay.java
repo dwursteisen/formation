@@ -10,8 +10,8 @@ import com.github.dwursteisen.injection.generator.Generator;
 public class BridgeDisplay implements Display, Generator{
     private int current;
 
-    public void display(int value) {
-        current = value;
+    public void display(int leftValue, int rightValue, int result, String operationSymbol) {
+        current = result;
     }
 
     public int generate() {
