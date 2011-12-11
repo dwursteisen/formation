@@ -21,51 +21,51 @@ import static org.junit.Assert.*;
 @RunWith(MockitoJUnitRunner.class)
 public class AnnuaireTest {
 
-    @Mock
-    private AdresseDao dao;
-
     private Annuaire annuaire;
 
     @Before
     public void setUp() {
-        annuaire = new Annuaire(dao);
+        
     }
 
+    /**
+     * Test de la méthode enregistrePersonne
+     * Pour cela, il est nécessaire de vérifier que la méthode
+     * ajouteAdresse a bien été appelé sur l'interface AdresseDao
+     * @throws Exception
+     */
     @Test
-    public void testEnregistressePersonne() throws Exception {
+    public void testEnregistrePersonne() throws Exception {
 
-        annuaire.enregistressePersonne("nom", "mon adresse");
-
-        Mockito.verify(dao).ajouteAdresse(new Adresse("nom", "mon adresse"));
     }
 
+    
+    /**
+     * Vérifier que la méthode recupereToutesLesAdressesSansDoublon 
+     * retourne la liste des adresses, en supprimant les doublons.
+     * 
+     * Pour cela, la méthode toutesLesAdresses de l'interface AdresseDao
+     * devra retourner une liste d'adresse avec des doublons.
+     */
     @Test
     public void testRecupereLesAdressesSansDoublon() {
-        Adresse adr1 = new Adresse("aaa", "adr");
-        Adresse adr2 = new Adresse("aaa", "adr");
-        Adresse adr3 = new Adresse("aaa", "adr");
-        List<Adresse> adresses = Arrays.asList(adr1, adr2, adr3);
-
-        Mockito.doReturn(adresses).when(dao).toutesLesAdresses();
-
-        Collection<String> result = annuaire.recupereToutesLesAdressesSansDoublon();
-        assertEquals(1, result.size());
 
     }
 
+    /**
+     * Vérifie que la méthode possedeDejaUneAdresse retourne false
+     * quand il n'y a pas d'adresse associé au nom.
+     * 
+     * Il faudra simuler recupereUneAdresse qui n'est pas encore 
+     * implémenté en utilisant un Spy
+     */
     @Test
     public void testNePossedePasAdresse() {
-        Annuaire spyAnnuaire = Mockito.spy(annuaire);
-        Mockito.doReturn(null).when(spyAnnuaire).recupereUneAdresse("nom");
-        boolean result = spyAnnuaire.possedeDejaUneAdresse("nom");
-        assertFalse(result);
+        
     }
 
     @Test
     public void testPossedeAdresse() {
-        Annuaire spyAnnuaire = Mockito.spy(annuaire);
-        Mockito.doReturn(new Adresse("nom", "adr")).when(spyAnnuaire).recupereUneAdresse("nom");
-        boolean result = spyAnnuaire.possedeDejaUneAdresse("nom");
-        assertTrue(result);
+        
     }
 }
