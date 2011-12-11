@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 /**
  * User: Wursteisen David
@@ -51,5 +51,21 @@ public class AnnuaireTest {
         Collection<String> result = annuaire.recupereToutesLesAdressesSansDoublon();
         assertEquals(1, result.size());
 
+    }
+
+    @Test
+    public void testNePossedePasAdresse() {
+        Annuaire spyAnnuaire = Mockito.spy(annuaire);
+        Mockito.doReturn(null).when(spyAnnuaire).recupereUneAdresse("nom");
+        boolean result = spyAnnuaire.possedeDejaUneAdresse("nom");
+        assertFalse(result);
+    }
+
+    @Test
+    public void testPossedeAdresse() {
+        Annuaire spyAnnuaire = Mockito.spy(annuaire);
+        Mockito.doReturn(new Adresse("nom", "adr")).when(spyAnnuaire).recupereUneAdresse("nom");
+        boolean result = spyAnnuaire.possedeDejaUneAdresse("nom");
+        assertTrue(result);
     }
 }

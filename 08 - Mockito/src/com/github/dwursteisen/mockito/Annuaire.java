@@ -27,6 +27,15 @@ public class Annuaire {
         }
         return result;
     }
+
+    public boolean possedeDejaUneAdresse(String nom) {
+        Adresse adresse = recupereUneAdresse(nom);
+        return adresse != null;
+    }
+    
+    Adresse recupereUneAdresse(String nom) {
+        throw new RuntimeException("Implémentation à faire...");
+    }
     
     Adresse fabriqueAdresse(String nom, String adresse) {
         return new Adresse(nom, adresse);
